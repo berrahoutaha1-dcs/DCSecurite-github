@@ -1,0 +1,82 @@
+if (showContinuousSecurityTestingPage) {
+    return (
+      <ThemeProvider>
+        <div className="min-h-screen">
+          <ContinuousSecurityTestingPage
+            onHomeClick={() => setShowContinuousSecurityTestingPage(false)}
+            onContactClick={() => { setShowContinuousSecurityTestingPage(false); setShowContactPage(true); }}
+            onAboutClick={() => { setShowContinuousSecurityTestingPage(false); setShowAboutPage(true); }}
+            onUnderAttackClick={() => { setShowContinuousSecurityTestingPage(false); setShowUnderAttack(true); }}
+            onSignInClick={() => setShowSignIn(true)}
+            onIndustriesClick={() => { setShowContinuousSecurityTestingPage(false); setShowIndustriesPage(true); }}
+            onUIUXDesignClick={() => { setShowContinuousSecurityTestingPage(false); setShowUIUXDesignPage(true); }}
+            onWebDevelopmentClick={() => { setShowContinuousSecurityTestingPage(false); setShowWebDevelopmentPage(true); }}
+            onMobileDevelopmentClick={() => { setShowContinuousSecurityTestingPage(false); setShowMobileDevelopmentPage(true); }}
+            onWhatsNewClick={() => { setShowContinuousSecurityTestingPage(false); setShowWhatsNewPage(true); }}
+            onCommunityClick={() => { setShowContinuousSecurityTestingPage(false); setShowLiveCommunityPage(true); }}
+            onLocationsClick={() => { setShowContinuousSecurityTestingPage(false); setShowLocationsPage(true); }}
+            onEthicsComplianceClick={() => { setShowContinuousSecurityTestingPage(false); setShowEthicsCompliance(true); }}
+            onCorporateResponsibilityClick={() => { setShowContinuousSecurityTestingPage(false); setShowCorporateResponsibility(true); }}
+            onCollaborationDonationClick={() => { setShowContinuousSecurityTestingPage(false); setShowCollaborationDonation(true); }}
+            onPrecisionAISecurityClick={() => { setShowContinuousSecurityTestingPage(false); setShowPrecisionAISecurity(true); }}
+            onAccelerateTransformationClick={() => { setShowContinuousSecurityTestingPage(false); setShowAccelerateTransformation(true); }}
+            onAwardsRecognitionClick={() => { setShowContinuousSecurityTestingPage(false); setShowAwardsRecognition(true); }}
+            onCustomerStoriesClick={() => { setShowContinuousSecurityTestingPage(false); setShowCustomerStories(true); }}
+            onCTFProgramClick={() => { setShowContinuousSecurityTestingPage(false); setShowCTFProgram(true); }}
+            onCareersOverviewClick={() => { setShowContinuousSecurityTestingPage(false); setShowCareersOverview(true); }}
+            onEventsClick={() => { setShowContinuousSecurityTestingPage(false); setShowEventsPage(true); }}
+            onERPManagementClick={() => { setShowContinuousSecurityTestingPage(false); setShowERPPage(true); }}
+            onCRMClick={() => { setShowContinuousSecurityTestingPage(false); setShowCRMPage(true); }}
+            onHRMClick={() => { setShowContinuousSecurityTestingPage(false); setShowHRMPage(true); }}
+            onIndustrialClick={() => { setShowContinuousSecurityTestingPage(false); setShowIndustrialPage(true); }}
+            onConstructionClick={() => { setShowContinuousSecurityTestingPage(false); setShowConstructionPage(true); }}
+            onLogisoft360Click={() => { setShowContinuousSecurityTestingPage(false); setShowLogisoft360Page(true); }}
+            onCustomerLoginClick={() => setShowCustomerLogin(true)}
+            onAdminLoginClick={() => setShowAdminLogin(true)}
+            onStudentMemberLoginClick={() => setShowStudentMemberLogin(true)}
+            onCustomerSignUpClick={() => setShowCustomerSignUp(true)}
+            onStudentMemberSignUpClick={() => setShowStudentMemberSignUp(true)}
+            onSignUpModalOpen={() => setShowSignUpModal(true)}
+            onThreatMapClick={() => { setShowContinuousSecurityTestingPage(false); setShowThreatMap(true); }}
+            onSecurityTestClick={() => { setShowContinuousSecurityTestingPage(false); setShowSecurityTest(true); }}
+            onCloudNetworkSecurityClick={() => { setShowContinuousSecurityTestingPage(false); setShowCloudNetworkSecurityPage(true); }}
+            onIDSIPSClick={() => { setShowContinuousSecurityTestingPage(false); setShowIDSIPSPage(true); }}
+            onWebPhishingSecurityClick={() => { setShowContinuousSecurityTestingPage(false); setShowWebPhishingSecurityPage(true); }}
+            onSecureWorkDeviceClick={() => { setShowContinuousSecurityTestingPage(false); setShowSecureWorkDevicePage(true); }}
+            onOTSecurityClick={() => { setShowContinuousSecurityTestingPage(false); setShowOTSecurityPage(true); }}
+            onCSPMClick={() => { setShowContinuousSecurityTestingPage(false); setShowCSPMPage(true); }}
+            onASPMClick={() => { setShowContinuousSecurityTestingPage(false); setShowASPMPage(true); }}
+            onWAASClick={() => { setShowContinuousSecurityTestingPage(false); setShowWAASPage(true); }}
+            onCWPClick={() => { setShowContinuousSecurityTestingPage(false); setShowCWPPage(true); }}
+            onDSPMClick={() => { setShowContinuousSecurityTestingPage(false); setShowDSPMPage(true); }}
+            onMDRClick={() => { setShowContinuousSecurityTestingPage(false); setShowMDRPage(true); }}
+            onCDRClick={() => { setShowContinuousSecurityTestingPage(false); setShowCDRPage(true); }}
+            onASMClick={() => { setShowContinuousSecurityTestingPage(false); setShowASMPage(true); }}
+            onSIEMClick={() => { setShowContinuousSecurityTestingPage(false); setShowSIEMPage(true); }}
+            onSOCAutomationClick={() => { setShowContinuousSecurityTestingPage(false); setShowSOCAutomationPage(true); }}
+            onCloudPenTestClick={() => { setShowContinuousSecurityTestingPage(false); setShowCloudPenTestPage(true); }}
+            onAPISecurityTestingClick={() => { setShowContinuousSecurityTestingPage(false); setShowAPISecurityTestingPage(true); }}
+            onWirelessNetworkPenTestClick={() => { setShowContinuousSecurityTestingPage(false); setShowWirelessNetworkPenTestPage(true); }}
+            onEPPClick={() => { setShowContinuousSecurityTestingPage(false); setShowEPPPage(true); }}
+            onXDRClick={() => { setShowContinuousSecurityTestingPage(false); setShowXDRPage(true); }}
+            onRansomwareProtectionClick={() => { setShowContinuousSecurityTestingPage(false); setShowRansomwareProtectionPage(true); }}
+            onDeviceSecurityHardeningClick={() => { setShowContinuousSecurityTestingPage(false); setShowDeviceSecurityHardeningPage(true); }}
+            onWebAppPenTestClick={() => { setShowContinuousSecurityTestingPage(false); setShowWebAppPenTestPage(true); }}
+            onMobileAppPenTestClick={() => { setShowContinuousSecurityTestingPage(false); setShowMobileAppPenTestPage(true); }}
+            onNetworkPenTestClick={() => { setShowContinuousSecurityTestingPage(false); setShowNetworkPenTestPage(true); }}
+            onRedTeamAssessmentsClick={() => { setShowContinuousSecurityTestingPage(false); setShowRedTeamAssessmentsPage(true); }}
+            onSocialEngineeringClick={() => { setShowContinuousSecurityTestingPage(false); setShowSocialEngineeringPage(true); }}
+            onZeroDayDetectionClick={() => { setShowContinuousSecurityTestingPage(false); setShowZeroDayDetectionPage(true); }}
+            onMalwareAnalysisClick={() => { setShowContinuousSecurityTestingPage(false); setShowMalwareAnalysisPage(true); }}
+            onVulnerabilityResearchClick={() => { setShowContinuousSecurityTestingPage(false); setShowVulnerabilityResearchPage(true); }}
+            onEthicalExploitDevelopmentClick={() => { setShowContinuousSecurityTestingPage(false); setShowEthicalExploitDevelopmentPage(true); }}
+            onContinuousSecurityTestingClick={() => { setShowContinuousSecurityTestingPage(false); setShowContinuousSecurityTestingPage(true); }}
+            onPrivacyClick={() => { setShowContinuousSecurityTestingPage(false); setShowPrivacyPolicy(true); }}
+            onTermsClick={() => { setShowContinuousSecurityTestingPage(false); setShowTermsOfService(true); }}
+            onCookieClick={() => { setShowContinuousSecurityTestingPage(false); setShowCookiePolicy(true); }}
+          />
+          <Toaster position="top-center" richColors />
+        </div>
+      </ThemeProvider>
+    );
+  }

@@ -1,0 +1,301 @@
+/* Optimized Meteor Animations - GPU Accelerated */
+/* Using only transform (translate3d) and opacity for maximum performance */
+
+@keyframes meteorFly1 {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.17;
+  }
+  40% {
+    opacity: 0.68;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.51;
+  }
+  100% {
+    transform: translate3d(-2000px, 1400px, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes meteorFly2 {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.17;
+  }
+  40% {
+    opacity: 0.68;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.51;
+  }
+  100% {
+    transform: translate3d(2000px, 1400px, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes meteorScale {
+  0% {
+    transform: scale(0.5);
+  }
+  20% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.7);
+  }
+  70% {
+    transform: scale(1.9);
+  }
+  85% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+@keyframes meteorGlow {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes trailExpand {
+  0% {
+    transform: scaleX(0.5);
+    opacity: 0;
+  }
+  20% {
+    transform: scaleX(1);
+    opacity: 0.5;
+  }
+  60% {
+    transform: scaleX(1.5);
+    opacity: 1;
+  }
+  70% {
+    transform: scaleX(1.8);
+    opacity: 1;
+  }
+  85% {
+    transform: scaleX(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(0.8);
+    opacity: 0.4;
+  }
+}
+
+/* Optimized meteor classes */
+.meteor-container {
+  position: absolute;
+  pointer-events: none;
+  will-change: transform, opacity;
+  /* GPU layer promotion */
+  transform: translate3d(0, 0, 0);
+}
+
+.meteor-1 {
+  animation: meteorFly1 4.5s cubic-bezier(0.3, 0, 0.2, 1) 2s infinite;
+  animation-fill-mode: both;
+}
+
+.meteor-2 {
+  animation: meteorFly2 4.5s cubic-bezier(0.3, 0, 0.2, 1) 6.5s infinite;
+  animation-fill-mode: both;
+}
+
+.meteor-core {
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+}
+
+.meteor-scale {
+  animation: meteorScale 4.5s ease-in-out infinite;
+  animation-fill-mode: both;
+}
+
+.meteor-glow {
+  animation: meteorGlow 4.5s ease-out infinite;
+  animation-fill-mode: both;
+  will-change: opacity;
+}
+
+.meteor-trail {
+  will-change: transform, opacity;
+  transform: translate3d(0, 0, 0);
+  animation: trailExpand 4.5s ease-in-out infinite;
+  animation-fill-mode: both;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .meteor-container,
+  .meteor-1,
+  .meteor-2,
+  .meteor-scale,
+  .meteor-glow,
+  .meteor-trail {
+    animation: none !important;
+    opacity: 0.3 !important;
+  }
+
+  /* Show only static elements with reduced motion */
+  .reduced-motion-hide {
+    display: none !important;
+  }
+}
+
+/* Performance optimization: Use containment */
+.meteor-wrapper {
+  contain: layout style paint;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+/* Visibility-aware animation pause */
+.paused {
+  animation-play-state: paused !important;
+}
+
+.paused * {
+  animation-play-state: paused !important;
+}
+
+/* Lightweight particle alternative (simplified) */
+@keyframes particleFade {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scale(0.8);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translate3d(var(--particle-x, 0), var(--particle-y, 0), 0) scale(1.5);
+  }
+}
+
+.meteor-particle {
+  animation: particleFade 4.5s ease-out infinite;
+  will-change: opacity, transform;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Optimized glow - single layer only */
+.optimized-glow {
+  filter: blur(20px);
+  opacity: 0.6;
+  will-change: opacity;
+}
+
+/* Text animations - GPU optimized */
+@keyframes textGlow {
+  0%,
+  100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes textFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -8px, 0);
+  }
+}
+
+.text-animated {
+  animation:
+    textGlow 3s ease-in-out infinite,
+    textFloat 3s ease-in-out infinite;
+  will-change: transform, opacity;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Button optimized animations */
+@keyframes buttonPulse {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  25% {
+    transform: translate3d(0, -5px, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  75% {
+    transform: translate3d(0, -3px, 0) scale(1);
+  }
+}
+
+.button-animated {
+  animation: buttonPulse 3s ease-in-out infinite;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Ensure 60fps cap */
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* Low-end device detection and degradation */
+@media (max-width: 768px) and (max-height: 1024px) {
+  /* Reduce complexity on mobile */
+  .meteor-particle {
+    display: none;
+  }
+
+  .optimized-glow {
+    filter: blur(10px);
+  }
+}
+
+/* Ultra-low performance mode */
+@media (prefers-contrast: more) or (prefers-reduced-data: reduce) {
+  .meteor-glow,
+  .meteor-particle,
+  .optimized-glow {
+    display: none;
+  }
+
+  .meteor-trail {
+    filter: none;
+  }
+}

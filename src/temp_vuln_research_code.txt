@@ -1,0 +1,253 @@
+
+  if (showVulnerabilityResearchPage) {
+    return (
+      <ThemeProvider>
+        <div className="min-h-screen">
+          <VulnerabilityResearchPage
+            onHomeClick={() => setShowVulnerabilityResearchPage(false)}
+            onContactClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowContactPage(true);
+            }}
+            onAboutClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowAboutPage(true);
+            }}
+            onUnderAttackClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowUnderAttack(true);
+            }}
+            onSignInClick={() => setShowSignIn(true)}
+            onIndustriesClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowIndustriesPage(true);
+            }}
+            onUIUXDesignClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowUIUXDesignPage(true);
+            }}
+            onWebDevelopmentClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowWebDevelopmentPage(true);
+            }}
+            onMobileDevelopmentClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowMobileDevelopmentPage(true);
+            }}
+            onWhatsNewClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowWhatsNewPage(true);
+            }}
+            onCommunityClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowCommunityPage(true);
+            }}
+            onLocationsClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowLocationsPage(true);
+            }}
+            onEthicsComplianceClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowEthicsCompliancePage(true);
+            }}
+            onCorporateResponsibilityClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowCorporateResponsibilityPage(true);
+            }}
+            onCollaborationDonationClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowCollaborationDonationPage(true);
+            }}
+            onPrecisionAISecurityClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowPrecisionAISecurityPage(true);
+            }}
+            onAccelerateTransformationClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowAccelerateTransformationPage(true);
+            }}
+            onAwardsRecognitionClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowAwardsRecognitionPage(true);
+            }}
+            onCustomerStoriesClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowCustomerStoriesPage(true);
+            }}
+            onCTFProgramClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowCTFProgramPage(true);
+            }}
+            onCareersOverviewClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowCareersOverviewPage(true);
+            }}
+            onEventsClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowEventsPage(true);
+            }}
+            onERPManagementClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowERPManagementPage(true);
+            }}
+            onCRMClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowCRMPage(true);
+            }}
+            onHRMClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowHRMPage(true);
+            }}
+            onIndustrialClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowIndustrialPage(true);
+            }}
+            onConstructionClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowConstructionPage(true);
+            }}
+            onLogisoft360Click={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowLogisoft360Page(true);
+            }}
+            onCustomerLoginClick={() => setShowCustomerLogin(true)}
+            onAdminLoginClick={() => setShowAdminLogin(true)}
+            onStudentMemberLoginClick={() => setShowStudentMemberLogin(true)}
+            onCustomerSignUpClick={() => setShowCustomerSignUp(true)}
+            onStudentMemberSignUpClick={() => setShowStudentMemberSignUp(true)}
+            onSignUpModalOpen={() => setShowSignUpModal(true)}
+            onThreatMapClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowThreatMapPage(true);
+            }}
+            onSecurityTestClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowSecurityTestPage(true);
+            }}
+            onCloudNetworkSecurityClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowCloudNetworkSecurityPage(true);
+            }}
+            onIDSIPSClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowIDSIPSPage(true);
+            }}
+            onWebPhishingSecurityClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowWebPhishingSecurityPage(true);
+            }}
+            onSecureWorkDeviceClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowSecureWorkDevicePage(true);
+            }}
+            onOTSecurityClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowOTSecurityPage(true);
+            }}
+            onCSPMClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowCSPMPage(true);
+            }}
+            onASPMClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowASPMPage(true);
+            }}
+            onWAASClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowWAASPage(true);
+            }}
+            onCWPClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowCWPPage(true);
+            }}
+            onDSPMClick={() => {
+              setShowDSPMClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowDSPMPage(true);
+            }}
+            onMDRClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowMDRPage(true);
+            }}
+            onCDRClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowCDRPage(true);
+            }}
+            onASMClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowASMPage(true);
+            }}
+            onSIEMClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowSIEMPage(true);
+            }}
+            onSOCAutomationClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowSOCAutomationPage(true);
+            }}
+            onCloudPenTestClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowCloudPenTestPage(true);
+            }}
+            onAPISecurityTestingClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowAPISecurityTestingPage(true);
+            }}
+            onWirelessNetworkPenTestClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowWirelessNetworkPenTestPage(true);
+            }}
+            onEPPClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowEPPPage(true);
+            }}
+            onXDRClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowXDRPage(true);
+            }}
+            onRansomwareProtectionClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowRansomwareProtectionPage(true);
+            }}
+            onDeviceSecurityHardeningClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowDeviceSecurityHardeningPage(true);
+            }}
+            onWebAppPenTestClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowWebAppPenTestPage(true);
+            }}
+            onMobileAppPenTestClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowMobileAppPenTestPage(true);
+            }}
+            onNetworkPenTestClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowNetworkPenTestPage(true);
+            }}
+            onRedTeamAssessmentsClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowRedTeamAssessmentsPage(true);
+            }}
+            onSocialEngineeringClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowSocialEngineeringPage(true);
+            }}
+            onZeroDayDetectionClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowZeroDayDetectionPage(true);
+            }}
+            onMalwareAnalysisClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowMalwareAnalysisPage(true);
+            }}
+            onVulnerabilityResearchClick={() => {
+              setShowVulnerabilityResearchPage(false);
+              setShowVulnerabilityResearchPage(true);
+            }}
+          />
+          <Toaster position="top-center" richColors />
+        </div>
+      </ThemeProvider>
+    );
+  }
